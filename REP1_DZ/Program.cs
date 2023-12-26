@@ -142,23 +142,26 @@ void task4()
 task5(); 
 void task5()
 {
+    /*    Console.Write("Введите число: ");
+        string x= Console.ReadLine();
+        if (int.TryParse(x, out int a))
+        {
+            if (a % 2 == 0)
+            {
+                Console.WriteLine($"ЧЕТНОЕ={a}");
+            }
+            else if (a % 2 != 0)
+            {
+                Console.WriteLine($"НЕЧЕТНОЕ={a}");
+            }
+        }
+        else
+        {
+            Console.WriteLine($"Неизвестное имя={a}");
+        }*/
     Console.Write("Введите число: ");
-    string x= Console.ReadLine();
-    if (int.TryParse(x, out int a))
-    {
-        if (a % 2 == 0)
-        {
-            Console.WriteLine($"ЧЕТНОЕ={a}");
-        }
-        else if (a % 2 != 0)
-        {
-            Console.WriteLine($"НЕЧЕТНОЕ={a}");
-        }
-    }
-    else
-    {
-        Console.WriteLine($"Неизвестное имя={a}");
-    }
+    //2:30:00 тернарник попробовать
+    //2:44 свитч
 
 }
 
