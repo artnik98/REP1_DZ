@@ -260,28 +260,28 @@ void task5 ()
         int tens = (a / 10);
         switch (tens)
         {
-            case 20:
+            case 2:
                 Console.Write("Двадцать ");
                 break;
-            case 30:
+            case 3:
                 Console.Write("Тридцать ");
                 break;
-            case 40:
+            case 4:
                 Console.Write("Сорок ");
                 break;
-            case 50:
+            case 5:
                 Console.Write("Пятьдесят");
                 break;
-            case 60:
+            case 6:
                 Console.Write("Шестьдесят ");
                 break;
-            case 70:
+            case 7:
                 Console.Write("Семьдесят ");
                 break;
-            case 80:
+            case 8:
                 Console.Write("Восемьдесят ");
                 break;
-            case 90:
+            case 9:
                 Console.Write("Девяносто ");
                 break;
         }
@@ -290,8 +290,6 @@ void task5 ()
 }
 
 
-
-//2:44 свитч
 
 
 
