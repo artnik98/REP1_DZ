@@ -118,20 +118,20 @@ void task4()
     int B = Convert.ToInt32(Console.ReadLine());
     Console.Write("Введите число C: ");
     int C = Convert.ToInt32(Console.ReadLine());
-    int D = Convert.ToInt32(Math.Pow(B, 2)) - 4 * A * C;
+    int D = Convert.ToInt32(B*B) - 4 * A * C;
     if (D < 0)
     {
         Console.WriteLine("Корней нет");
     }
     else if (D == 0)
     {
-        double X = -B / (2 * A);
+        double X = -B / (2.0 * A);
         Console.WriteLine($"Два равных корня равны= {X}");
     }
     else
     {
-        double X1 = (-B + Math.Sqrt(D)) / (2 * A);
-        double X2 = (-B - Math.Sqrt(D)) / (2 * A);
+        double X1 = (-B + Math.Sqrt(D)) / (2.0 * A);
+        double X2 = (-B - Math.Sqrt(D)) / (2.0 * A);
         Console.WriteLine($"Два разных корня равны= {X1} и {X2}");
     }
 }
@@ -184,7 +184,7 @@ Console.ReadKey();
 }
 
 
-task5();
+task4();
 //Упражнение 5 
 void task5 ()
 {
@@ -226,6 +226,34 @@ void task5 ()
 
     else if (a>=20 && a <= 99)
     {
+        int tens = (a / 10);
+        switch (tens)
+        {
+            case 2:
+                Console.Write("Двадцать ");
+                break;
+            case 3:
+                Console.Write("Тридцать ");
+                break;
+            case 4:
+                Console.Write("Сорок ");
+                break;
+            case 5:
+                Console.Write("Пятьдесят");
+                break;
+            case 6:
+                Console.Write("Шестьдесят ");
+                break;
+            case 7:
+                Console.Write("Семьдесят ");
+                break;
+            case 8:
+                Console.Write("Восемьдесят ");
+                break;
+            case 9:
+                Console.Write("Девяносто ");
+                break;
+        }
         int number = a % 10;
         switch (number)
         {
@@ -255,34 +283,6 @@ void task5 ()
                 break;
             case 9:
                 Console.Write("Девять");
-                break;
-        }
-        int tens = (a / 10);
-        switch (tens)
-        {
-            case 2:
-                Console.Write("Двадцать ");
-                break;
-            case 3:
-                Console.Write("Тридцать ");
-                break;
-            case 4:
-                Console.Write("Сорок ");
-                break;
-            case 5:
-                Console.Write("Пятьдесят");
-                break;
-            case 6:
-                Console.Write("Шестьдесят ");
-                break;
-            case 7:
-                Console.Write("Семьдесят ");
-                break;
-            case 8:
-                Console.Write("Восемьдесят ");
-                break;
-            case 9:
-                Console.Write("Девяносто ");
                 break;
         }
     }
